@@ -21,7 +21,7 @@ import java.io.IOException;
  */
 public class Backlight extends CordovaPlugin {
   private final String TAG = Backlight.class.getSimpleName();
-  private final String BACKLIGHT_FILE_PATH = "/sys/class/backlight_show/backlight_status";
+  private final String BACKLIGHT_FILE_PATH = "/sys/class/disp/disp/attr/lcd";
 
   // Prevent turning off backlight when app is in background mode
   private boolean active = false;
